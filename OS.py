@@ -5,7 +5,7 @@ import numpy as np
 
 # Function to calculate FCFS Scheduling
 def fcfs_scheduling(processes):
-    processes.sort(key=lambda x: x[1])  # Sort by Arrival Time
+    processes.sort(key=lambda x: x[1]) 
     n = len(processes)
     completion_time = [0] * n
     waiting_time = [0] * n
