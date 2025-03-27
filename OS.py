@@ -4,7 +4,7 @@ def draw_gantt_chart(schedule):
     fig, ax = plt.subplots(figsize=(10, 2))
     start_time = 0
     for process, duration in schedule:
-        ax.broken_barh([(start_time, duration)], (10, 5), facecolors='blue')
+        ax.broken_barh([(start_time, duration)], (10, 5), facecolors='skyblue')
         ax.text(start_time + duration / 2, 12, f"P{process}", ha='center', va='center', color='white', fontsize=10)
         start_time += duration
 
